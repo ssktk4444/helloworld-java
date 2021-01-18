@@ -8,5 +8,8 @@ jobs:
   say_hello:
     runs-on: self-hosted
     steps:
+      - uses: actions/download-artifact@v1
+        with:
+          name: HelloWorld.java
       - run: javac HelloWorld.java -d C:\Users\Administrator\Desktop
       - run: java HelloWorld -classpath C:\Users\Administrator\Desktop
