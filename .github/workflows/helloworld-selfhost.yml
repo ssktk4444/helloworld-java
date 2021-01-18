@@ -1,0 +1,12 @@
+
+name: Hello World for Selfhost
+
+on: 
+  workflow_dispatch:
+
+jobs:
+  say_hello:
+    runs-on: self-hosted
+    steps:
+      - run: javac HelloWorld.java -d C:\Users\Administrator\Desktop
+      - run: java HelloWorld -classpath C:\Users\Administrator\Desktop
