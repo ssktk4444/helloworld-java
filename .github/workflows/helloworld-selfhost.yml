@@ -11,5 +11,5 @@ jobs:
       - uses: actions/checkout@v2
         with:
           fetch-depth: 1
-      - run: javac C:\Users\Administrator\Desktop\HelloWorld.java -d C:\Users\Administrator\Desktop
+      - run: javac HelloWorld.java -d C:\Users\Administrator\Desktop
       - run: java HelloWorld -classpath C:\Users\Administrator\Desktop
